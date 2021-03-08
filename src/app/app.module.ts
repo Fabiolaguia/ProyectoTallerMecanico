@@ -18,7 +18,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatListModule } from '@angular/material/list';
 import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -39,9 +42,12 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatTabsModule,
     MatFormFieldModule,
+    MatSidenavModule,
     MatButtonModule,
     MatCheckboxModule,
     MatIconModule,
+    MatListModule,
+    FlexLayoutModule,
     FormsModule,
     BrowserAnimationsModule,
   ],
@@ -49,3 +55,9 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+/* === LINKS INTERESANTES ===
+
+https://es.stackoverflow.com/questions/262706/mostrar-o-ocultar-acciones-del-nav-bar-seg%C3%BAn-el-rol-del-usuario-angular
+
+=== FIN === */

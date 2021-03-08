@@ -1,0 +1,38 @@
+.nav-bar{
+    justify-content: space-between;
+    background-color: #17496C;;
+}
+
+.menu-spacer {
+    flex: 1 1 auto;
+  }
+  
+.SubNav{
+    position: relative;
+    float: right;
+}
+
+span {
+    padding-right: 1rem;
+}
+
+.Logo{
+    margin-top: 125px;
+    left: 0%;
+    right: 81.65%;
+    top: 0.5%;
+    bottom: -0.18%;
+    transform: rotate(-3.74deg);
+    z-index: 2;
+}
+
+.Logo2{
+    margin-top: 125px;
+    left: 0%;
+    right: 81.65%;
+    top: 0.5%;
+    bottom: -0.18%;
+    transform: rotate(-3.74deg);
+    z-index: 2;
+    justify-content:space-between;
+}
