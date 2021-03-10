@@ -4,16 +4,16 @@
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
-      <span class="Logo2"><img src="../assets/Logo.png" alt="Inicio" fxShow="true" fxHide.gt-sm></span>
-      <span class="Logo"><img src="../assets/Logo.png" alt="Inicio" fxShow="true" fxHide.lt-md></span>
-      <span class="menu-spacer"></span>
+      <span class="Logo2"><img src="../assets/Logo.png" alt="Logo" fxShow="true" fxHide.gt-sm></span>
+      <span class="Logo"><img src="../assets/Logo.png" alt="Logo" fxShow="true" fxHide.lt-md></span>
+      <!-- <span class="menu-spacer"></span> -->
       <div class="SubNav" fxShow="true" fxHide.lt-md>
-        <a href="/home" mat-button>Menu Item 1</a>
+        <a href="/home" mat-button>Inicio</a>
         <a href="#" mat-button>Menu Item 2</a>
         <a href="#" mat-button>Menu Item 3</a>
         <a href="#" mat-button>Menu Item 4</a>
         <a href="#" mat-button>Menu Item 5</a>
-        <a href="#" mat-button>Menu Item 6</a>
+        <a href="/login" mat-button>Iniciar Sesion</a>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -21,12 +21,12 @@
     <mat-sidenav #sidenav>
       <mat-nav-list>
         <!-- <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a> -->
-        <a href="#" mat-list-item>Menu Item 1</a>
+        <a href="/home" mat-list-item>Inicio</a>
         <a href="#" mat-list-item>Menu Item 2</a>
         <a href="#" mat-list-item>Menu Item 3</a>
         <a href="#" mat-list-item>Menu Item 4</a>
         <a href="#" mat-list-item>Menu Item 5</a>
-        <a href="#"mat-list-item>Menu Item 6</a>
+        <a href="/login" mat-list-item>Iniciar Sesion</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill><br><br><br><br><br><br><br><router-outlet></router-outlet></mat-sidenav-content>

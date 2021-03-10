@@ -1,15 +1,17 @@
 .nav-bar{
+    background-color: #17496C;
+    display: flex;
     justify-content: space-between;
-    background-color: #17496C;;
+    float: right;
+    align-content: space-between;
 }
 
 .menu-spacer {
     flex: 1 1 auto;
   }
-  
+
 .SubNav{
-    position: relative;
-    float: right;
+    justify-content: right;
 }
 
 span {
@@ -18,11 +20,11 @@ span {
 
 .Logo{
     margin-top: 125px;
-    left: 0%;
+    /*left: 0%;
     right: 81.65%;
     top: 0.5%;
     bottom: -0.18%;
-    transform: rotate(-3.74deg);
+    transform: rotate(-3.74deg);*/
     z-index: 2;
 }
 
@@ -34,5 +36,6 @@ span {
     bottom: -0.18%;
     transform: rotate(-3.74deg);
     z-index: 2;
-    justify-content:space-between;
+    position: relative;
+    float: right;
 }
