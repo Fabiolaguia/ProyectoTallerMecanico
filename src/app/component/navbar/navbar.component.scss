@@ -1,17 +1,14 @@
 .nav-bar{
     background-color: #17496C;
-    display: flex;
-    justify-content: space-between;
-    float: right;
-    align-content: space-between;
 }
 
 .menu-spacer {
     flex: 1 1 auto;
   }
 
-.SubNav{
-    justify-content: right;
+mat-toolbar-row{
+    display: inline-flex;
+    justify-content: space-between;
 }
 
 span {
@@ -36,6 +33,5 @@ span {
     bottom: -0.18%;
     transform: rotate(-3.74deg);
     z-index: 2;
-    position: relative;
-    float: right;
+
 }

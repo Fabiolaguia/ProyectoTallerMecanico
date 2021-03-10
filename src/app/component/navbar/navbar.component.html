@@ -4,9 +4,7 @@
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
-      <span class="Logo2"><img src="../assets/Logo.png" alt="Logo" fxShow="true" fxHide.gt-sm></span>
       <span class="Logo"><img src="../assets/Logo.png" alt="Logo" fxShow="true" fxHide.lt-md></span>
-      <!-- <span class="menu-spacer"></span> -->
       <div class="SubNav" fxShow="true" fxHide.lt-md>
         <a href="/home" mat-button>Inicio</a>
         <a href="#" mat-button>Menu Item 2</a>
@@ -20,6 +18,7 @@
   <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav>
       <mat-nav-list>
+        <a class="Logo2"><img src="../assets/Logo.png" alt="Logo" fxShow="true" fxHide.gt-sm></a>
         <!-- <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a> -->
         <a href="/home" mat-list-item>Inicio</a>
         <a href="#" mat-list-item>Menu Item 2</a>
