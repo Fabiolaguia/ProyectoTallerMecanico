@@ -1,2 +1,38 @@
+<div class="botones">
+    <a href="#" mat-button>Servicios</a>
+    <a href="#" mat-button>Solicite una Cita</a>
+    <a href="#" mat-button>Encuentranos</a>
+</div> <br><br><br>
+<div align="center"><img name="slider" width="800" height="800"></div>
 
-<p>home works!</p>
+        <script>
+            window.addEventListener('load', function () {
+                console.log('el contenido se ha cargado');
+
+                var imagenes = [];
+
+                imagenes[0] = '../assets/slider1.png';
+                //imagenes[1] = 'img/Foto 2.png';
+                //imagenes[2] = 'img/Foto 3.png';
+                
+                var IndiceImagenes = 0;
+
+                function cambiarImagenes(){
+                    document.slider.src = imagenes[IndiceImagenes];
+                
+                    if(IndiceImagenes < 2) {
+                        IndiceImagenes++
+                    } else {
+                        IndiceImagenes = 0;
+                    }
+
+                }
+
+                setInterval(cambiarImagenes, 10000);
+
+
+            })
+
+        </script>
+
+        

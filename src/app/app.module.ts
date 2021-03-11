@@ -20,6 +20,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list'
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './pages/login/login.component';
@@ -49,9 +50,11 @@ import { LoginComponent } from './pages/login/login.component';
     MatCheckboxModule,
     MatIconModule,
     MatListModule,
+    MatGridListModule,
     FlexLayoutModule,
     FormsModule,
     BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
