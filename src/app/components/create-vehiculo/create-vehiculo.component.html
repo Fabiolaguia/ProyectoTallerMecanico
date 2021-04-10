@@ -1,0 +1,37 @@
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class = "card text-center">
+                <div class="card-body">
+                    <h3>{{titulo}} <div *ngIf="loading" class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div> </h3>
+                    <span *ngIf="submitted && createVehiculo.invalid" class="btn btn-danger">TODOS LOS CAMPOS SON OBLIGATORIOS</span>
+                    <form class="mt-4" [formGroup]="createVehiculo" (ngSubmit)="agregarEditarVehiculo()">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control form-control-lg" formControlName="modelo" placeholder="Modelo">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control form-control-lg" formControlName="serial" placeholder="Serial">
+                            </div>
+
+
+                        </div>
+                        <input type="text" class="form-control form-control-lg mt-3" formControlName="placa" placeholder="Placa del vehiculo">
+                        <input type="number" class="form-control form-control-lg mt-3" min="1900" formControlName="year" placeholder="Año del vehiculo">
+                        <!--<input type="date" class="form-control form-control-lg mt-3" formControlName="fecha" placeholder="Fecha de registro">-->
+                        <div class="mt-3">
+                            <button type="text" class="btn btn-secondary btn-lg mr-3 " routerLink="/list-vehiculos">Volver</button>
+                            <button type="submit" class="btn btn-dark btn-lg">Agregar</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
