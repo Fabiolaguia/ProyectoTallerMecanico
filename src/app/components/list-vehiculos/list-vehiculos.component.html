@@ -1,0 +1,83 @@
+<div class = "container mt-4">
+    <div class = "card">
+        <div class = "card-body">
+            <span class= "h3">Lista de Vehiculos</span>
+            <button class = "btn btn-dark btn-lg float-right" routerLink="/createVehiculo">Agregar</button>
+            <h5 style="margin-top: 30px;" *ngIf="vehiculos.length ==0">No hay vehiculos registrados</h5>
+            <table  *ngIf="vehiculos.length > 0" class="table table-striped table mt-5">
+                <thead>
+                  <tr>
+                    
+                    <th>Modelo</th>
+                    <th>Serial del motor</th>
+                    <th>Año</th>
+                    <th>Placa</th>
+                    <th>Fecha de Registro</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let vehiculos of vehiculos">
+                    
+                    <td>{{vehiculos.modelo}}</td>
+                    <td>{{vehiculos.serial}}</td>
+                    <td>{{vehiculos.year}}</td>
+                    <td>{{vehiculos.placa}}</td>
+                    <td>{{vehiculos.fecha}}</td>
+                    <td>
+                      <i class="far fa-edit fa-lg text-info mr-2 " [routerLink]="['/editVehiculo/',vehiculos.id]"></i>
+                      <i (click)="eliminarVehiculo(vehiculos.id)"class="fas fa-minus-square fa-lg text-danger mr-2"></i>
+                    </td>
+                    
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class = "container mt-4">
+  <div class = "card">
+      <div class = "card-body">
+          <span class= "h3">Vehiculos Desactivados</span>
+          
+          <h5 style="margin-top: 30px;" *ngIf="vehiculos.length ==0">No hay vehiculos desactivados</h5>
+          <table  *ngIf="vehiculos.length > 0" class="table table-striped table mt-5">
+            <thead>
+              <tr>
+                
+                <th>Modelo</th>
+                <th>Serial del motor</th>
+                <th>Año</th>
+                <th>Placa</th>
+                <th>Fecha de Registro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let vehiculos of vehiculos">
+                
+                <td>{{vehiculos.modelo}}</td>
+                <td>{{vehiculos.serial}}</td>
+                <td>{{vehiculos.year}}</td>
+                <td>{{vehiculos.placa}}</td>
+                <td>{{vehiculos.fecha}}</td>
+                <td>
+                  <i class="far fa-edit fa-lg text-info mr-2 " [routerLink]="['/editVehiculo/',vehiculos.id]"></i>
+                  <i (click)="eliminarVehiculo(vehiculos.id)"class="fas fa-minus-square fa-lg text-danger mr-2"></i>
+                </td>
+                
+              </tr>
+             
+            </tbody>
+          </table>
+
+         
+
+      </div>
+
+  </div>
+
+</div>

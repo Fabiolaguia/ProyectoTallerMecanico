@@ -1,0 +1,53 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+    <form novalidate [formGroup]="user" (ngSubmit)="onSubmit()" >
+      <div class="authBlock">
+        <h3>Registrarse</h3>
+
+        <div class="formGroup">
+          <input type="text" class="formControl" placeholder="Nombre" formControlName="name" required>
+        </div>
+
+        <div class="formGroup">
+          <input type="text" class="formControl" placeholder="Apellido" formControlName="lastName" required>
+        </div>
+
+        <div class="formGroup">
+          <input type="text" class="formControl" placeholder="Teléfono" formControlName="phone" required>
+        </div>
+
+        <div class="formGroup">
+          <input type="text" class="formControl" placeholder="Cédula" formControlName="ci" required>
+        </div>
+
+        <div class="formGroup">
+          <textarea class="formControl" placeholder="Dirección" formControlName="address" required></textarea>
+        </div>
+
+        <div class="formGroup">
+          <input type="email" class="formControl" placeholder="Email Address" formControlName="email" required/>
+        </div>
+
+        <div class="formGroup">
+          <input type="password" class="formControl" placeholder="Password" formControlName="password" required/>
+        </div>
+
+        <div class="formGroup">
+          <input type="submit" class="btn btnPrimary" value="Sign Up" [disabled]="user.invalid">
+        </div>
+
+        <div class="formGroup">
+          <span class="or"><span class="orInner">Or</span></span>
+        </div>
+
+
+      </div>
+
+      <div class="redirectToLogin">
+        <span>Already have an account? <a class="redirect" routerLinkActive="active"
+                                          [routerLink]="['../login']">Log In</a></span>
+      </div>
+    </form>
+  </div>
+
+</div>

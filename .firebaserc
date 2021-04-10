@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "proyectostallermecanico": {
+      "hosting": {
+        "TallerMecanico": [
+          "proyectostallermecanico"
+        ]
+      }
+    }
+  }
+}
